@@ -42,6 +42,26 @@ private:
     virtual bool canUseJN() override;
 };
 
-void demo();
+
+//使用案例
+/*
+void demo(){
+
+    Fighter *prole_war=new F_Warrior(1000,0,200);
+    prole_war->JN_Burn();
+    prole_war->JN_Burn();
+    prole_war->JN_Burn();
+    prole_war->JN_Burn();
+    prole_war->JN_Burn();
+    cout<<"----------------------------------------------------"<<endl;
+    Fighter *prole_mag=new F_Mage(800,200,100);
+    prole_mag->JN_Burn();
+    prole_mag->JN_Burn();
+    prole_mag->JN_Burn();
+    prole_mag->JN_Burn();
+    prole_mag->JN_Burn();
+
+}
+*/
 
 #endif //DESIGNPATTERNS_TEMPLATEMETHODPATTERN_H
