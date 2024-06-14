@@ -49,27 +49,32 @@ public:
     virtual Monster *createMonster();
 };
 
-//使用案例
-/*
-void demo(){
-    M_ParFactory *p_ud_fy=new M_UndeadFactory();
-    Monster *pM1=p_ud_fy->createMonster();
+Monster * Gbl_CreateMonster(M_ParFactory * factory);
 
-    M_ParFactory *p_elm_fy=new M_ElementFactory();
-    Monster *pM2=p_elm_fy->createMonster();
 
-    M_ParFactory *p_mec_fy=new M_MechanicFactory();
-    Monster *pM3=p_mec_fy->createMonster();
+/*使用案例
+void test(){
+    M_ParFactory * p_ud_fy=new M_UndeadFactory(); //亡灵工厂
+    Monster *pM1= Gbl_CreateMonster(p_ud_fy); //生产一只亡灵类怪物
 
+    M_ParFactory * p_elm_fy=new M_ElementFactory(); //元素工厂
+    Monster *pM2= Gbl_CreateMonster(p_elm_fy); //生产一只元素怪物
+
+    M_ParFactory * p_mec_fy=new M_MechanicFactory(); //机械工厂
+    Monster *pM3= Gbl_CreateMonster(p_mec_fy); //生产一只机械怪物
+
+    //释放资源
+    //释放工厂
     delete p_ud_fy;
     delete p_elm_fy;
     delete p_mec_fy;
 
+    //释放怪物
     delete pM1;
     delete pM2;
     delete pM3;
 }
-*/
+ */
 
 
 #endif //DESIGNPATTERNS_FACTORYMETHODPATTERN_H

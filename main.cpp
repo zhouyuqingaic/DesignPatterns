@@ -1,18 +1,9 @@
-#include <iostream>
+#include<iostream>
 
-//#include "FactoryMethodPattern/FactoryMethodPattern.h"
-#include "TemplateMethodPattern/TemplateMethodPattern.h"
+using namespace std;
 
-
-
-
-
-int main() {
-
+int main(){
 
     return 0;
 }
-
-
-
 

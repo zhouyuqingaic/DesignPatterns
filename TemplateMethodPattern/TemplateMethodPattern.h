@@ -42,7 +42,6 @@ private:
     virtual bool canUseJN() override;
 };
 
-
 //使用案例
 /*
 void demo(){

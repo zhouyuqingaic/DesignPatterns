@@ -34,5 +34,9 @@ Monster *M_MechanicFactory::createMonster() {
     return new M_Mechanic(400,0,110);
 }
 
+//创建怪物对象的全局函数
+Monster * Gbl_CreateMonster(M_ParFactory * factory){
+    return factory->createMonster();  //createMonster虚函数实现了多态new的行为,factory指定的具体怪物工厂类函数不同，创建的怪物对象也不同
+}
 
 
