@@ -2,8 +2,8 @@
 // Created by zhouyuqing on 2024/6/22.
 //
 
-#ifndef DESIGNPATTERNS_CHAINOFRESPONSIBILITY_H
-#define DESIGNPATTERNS_CHAINOFRESPONSIBILITY_H
+#ifndef DESIGNPATTERNS_CHAINOFRESPONSIBILITYPATTERN_H
+#define DESIGNPATTERNS_CHAINOFRESPONSIBILITYPATTERN_H
 
 #include<iostream>
 using namespace std;
@@ -47,7 +47,7 @@ public:
     string processRequest(string str_world) override;
 };
 
-#endif //DESIGNPATTERNS_CHAINOFRESPONSIBILITY_H
+#endif //DESIGNPATTERNS_CHAINOFRESPONSIBILITYPATTERN_H
 
 /*
  //使用案例

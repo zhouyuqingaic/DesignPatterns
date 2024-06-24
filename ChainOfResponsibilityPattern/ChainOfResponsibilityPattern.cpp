@@ -2,7 +2,7 @@
 // Created by zhouyuqing on 2024/6/22.
 //
 
-#include"ChainOfResponsibility.h"
+#include"ChainOfResponsibilityPattern.h"
 
 //敏感词过滤器父类
 //设置指向责任链中下个过滤器
