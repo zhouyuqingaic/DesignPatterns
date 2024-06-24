@@ -48,3 +48,30 @@ public:
 };
 
 #endif //DESIGNPATTERNS_CHAINOFRESPONSIBILITY_H
+
+/*
+ //使用案例
+ int main(){
+    //创建出三个过滤器
+    SexyWorldFilter * sexyWorldFilter_p=new SexyWorldFilter();
+    DirtyWorldFilter * dirtyWorldFilter_p=new DirtyWorldFilter();
+    PoliticsWorldFilter * politicsWorldFilter_p=new PoliticsWorldFilter();
+
+    sexyWorldFilter_p->setNextChain(nullptr);
+    dirtyWorldFilter_p->setNextChain(nullptr);
+    politicsWorldFilter_p->setNextChain(nullptr);
+
+    //国建责任链
+    sexyWorldFilter_p->setNextChain(dirtyWorldFilter_p);
+    dirtyWorldFilter_p->setNextChain(politicsWorldFilter_p);
+
+    //进行过滤，并查看结果
+    string worldFilterResult=sexyWorldFilter_p->processRequest("发生性关系，说脏话，随便议论政治");
+    cout<<worldFilterResult<<endl;
+
+    //释放过滤器
+    delete sexyWorldFilter_p;
+    delete dirtyWorldFilter_p;
+    delete politicsWorldFilter_p;
+}
+ */
